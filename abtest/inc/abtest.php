@@ -6,12 +6,12 @@ if( !isset($_SESSION['last_access']) ){
     $currentvalue = fgets($myfile);
     
     //Ändrar värdet mellan 0 och 1 - skriver i textfilen på servern
-    $myfile = fopen("inc/global.txt", "w") or die("Unable to open file!");
     if($currentvalue == "1"){
         $txt = "0";
     }else{
         $txt = "1";
     }
+    $myfile = fopen("inc/global.txt", "w") or die("Unable to open file!");
     fwrite($myfile, $txt);
     
     //Sätter en sessionsvariabel till det värdet som stod i filen vid första laddning

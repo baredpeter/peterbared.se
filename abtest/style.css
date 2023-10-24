@@ -1,0 +1,22 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(208, 208, 208);
+  min-height: 100px;
+  padding: 2rem;
+}
+
+section {
+  min-height: 300px;
+  padding: 2rem;
+}
+
+footer {
+  background-color: rgb(162, 212, 164);
+  min-height: 200px;
+  padding: 2rem;
+}/*# sourceMappingURL=style.css.map */
